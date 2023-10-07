@@ -35,6 +35,7 @@ class MainActivity : ComponentActivity() {
                     Greeting()
                 }
             }
+            //Created by 27558 /
         }
     }
 }
@@ -72,6 +73,7 @@ fun Greeting() {
 }
 @Preview(showBackground = true)
 @Composable
+//Created by Radi /
 fun GreetingPreview() {
     Challenge_1Theme {
         Greeting()
