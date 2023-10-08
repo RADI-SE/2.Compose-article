@@ -39,13 +39,13 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 @Composable
 fun Greeting() {
     Column(
         verticalArrangement = Arrangement.Top,
                 modifier = Modifier
                     .fillMaxSize()
+
     ) {
         Image(painter = painterResource(id = R.drawable.b), contentDescription = "background")
         Text(
@@ -56,14 +56,24 @@ fun Greeting() {
                 .padding(10.dp)
         )
         Text(
-            text = "Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.",
+            text = "Jetpack Compose is a modern toolkit for building native Android UI. " +
+                    "Compose simplifies and accelerates UI development on Android with less code," +
+                    " powerful tools, and intuitive Kotlin APIs.",
             fontSize= 15.sp,
             textAlign =TextAlign.Justify,
             modifier= Modifier
                 .padding(10.dp)
             )
             Text(
-                text = "In this tutorial, you build a simple UI component with declarative functions. You call Compose functions to say what elements you want and the Compose compiler does the rest. Compose is built around Composable functions. These functions let you define your app\\'s UI programmatically because they let you describe how it should look and provide data dependencies, rather than focus on the process of the UI\\'s construction, such as initializing an element and then attaching it to a parent. To create a Composable function, you add the @Composable annotation to the function name.",
+                text = "In this tutorial, you build a simple UI component with " +
+                        "declarative functions. You call Compose functions to say what elements " +
+                        "you want and the Compose compiler does the rest. Compose is built around " +
+                        "Composable functions. These functions let you define your app\\'s" +
+                        " UI programmatically because they let you describe how it should look " +
+                        "and provide data dependencies, rather than focus on the process " +
+                        "of the UI\\'s construction, such as initializing an element " +
+                        "and then attaching it to a parent. To create a Composable function, " +
+                        "you add the @Composable annotation to the function name.",
                 fontSize= 15.sp,
                 textAlign =TextAlign.Justify,
                 modifier= Modifier
